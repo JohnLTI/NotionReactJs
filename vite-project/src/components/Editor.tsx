@@ -37,9 +37,7 @@ export function Editor() {
       {editor && (
         <FloatingMenu
           editor={editor}
-          className="py-2 px-1 bg-zinc-700 shadow-xl border gap-1 border-zinc-600 shadow-black/20 rounded-lg 
-          overflow-hidden flex 
-          flex-col"
+          className="py-2 px-1 bg-zinc-700 shadow-xl border gap-1 border-zinc-600 shadow-black/20 rounded-lg overflow-hidden flex flex-col"
           shouldShow={({ state }) => {
             const { $from } = state.selection;
             const currentLineText = $from.nodeBefore?.textContent;
